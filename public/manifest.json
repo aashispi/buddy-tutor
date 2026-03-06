@@ -1,0 +1,19 @@
+{
+  "name": "Buddy Tutor – AI Study Pal",
+  "short_name": "Buddy Tutor",
+  "description": "Fun AI tutor for Grade 3-5 kids. Upload your chapter, learn with Buddy!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f4ff",
+  "theme_color": "#2ECC71",
+  "orientation": "portrait",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["education", "kids"],
+  "shortcuts": [
+    { "name": "Start Learning", "url": "/learn", "description": "Upload chapter and start lesson" }
+  ]
+}
