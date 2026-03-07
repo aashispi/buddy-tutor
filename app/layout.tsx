@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito, Fredoka_One } from "next/font/google";
+import { Nunito, Fredoka } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
@@ -9,7 +9,7 @@ const nunito = Nunito({
   variable: "--font-nunito",
   display: "swap",
 });
-const fredoka = Fredoka_One({
+const fredoka = Fredoka({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-fredoka",
