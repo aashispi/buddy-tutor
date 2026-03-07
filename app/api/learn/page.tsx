@@ -383,9 +383,8 @@ export default function LearnPage() {
     // Stop any current speech
     window.speechSynthesis?.cancel();
 
-    const SpeechRecognition =
-      (window as typeof window & { webkitSpeechRecognition?: typeof window.SpeechRecognition }).webkitSpeechRecognition
-      || window.SpeechRecognition;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
     if (!SpeechRecognition) return;
 
