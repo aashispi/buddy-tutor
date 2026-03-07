@@ -196,7 +196,7 @@ export default function LearnPage() {
   // Refs
   const chatRef     = useRef<HTMLDivElement>(null);
   const voiceRef    = useRef<HTMLDivElement>(null);
-  const recognRef   = useRef<InstanceType<typeof window.SpeechRecognition> | null>(null);
+  const recognRef   = useRef<any>(null);
   const synthRef    = useRef<SpeechSynthesisUtterance | null>(null); // eslint-disable-line @typescript-eslint/no-unused-vars
   const isListening = useRef(false);
 
