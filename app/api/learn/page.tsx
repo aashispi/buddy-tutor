@@ -402,7 +402,7 @@ const SpeechRecognition = (window as any).SpeechRecognition || (window as any).w
       setTranscript("");
     };
 
-    recog.onresult = (e: SpeechRecognitionEvent) => {
+    recog.onresult = (e: any) => {
       const t = Array.from(e.results)
         .map(r => r[0].transcript)
         .join("");
