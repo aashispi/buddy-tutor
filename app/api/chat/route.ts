@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 // GEMINI_API_KEY is a SERVER-ONLY env var (no NEXT_PUBLIC_ prefix)
 // Vercel never ships it to the browser — completely safe
 const KEY   = process.env.GEMINI_API_KEY ?? "";
-const MODEL = "gemini-1.5-flash";
+const MODEL = "gemini-2.0-flash";
 const URL_  = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${KEY}`;
 
 const AGES: Record<string, string> = {
