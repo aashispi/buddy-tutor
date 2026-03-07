@@ -403,9 +403,10 @@ const SpeechRecognition = (window as any).SpeechRecognition || (window as any).w
     };
 
     recog.onresult = (e: any) => {
-      const t = Array.from(e.results)
-        .map(r => r[0].transcript)
-        .join("");
+    const t = Array.from(e.results)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .map((r: any) => r[0].transcript)
+     .join("");
       setTranscript(t);
     };
 
